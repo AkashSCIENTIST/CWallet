@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:radius="11dp"
+    android:id="@+id/payment_success_toast"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:gravity="center_vertical|center_horizontal"
+    tools:ignore="UseCompoundDrawables">
+    <ImageView
+        android:id="@+id/success_toast_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/payment_success"
+        android:src="@drawable/_975602" />
+    <TextView
+        android:id="@+id/custom_toast_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:textSize="25sp"
+        android:textColor="#7F00FF"
+        android:contentDescription="@string/payment_success"
+        android:text="@string/payment_success" />
+</LinearLayout>

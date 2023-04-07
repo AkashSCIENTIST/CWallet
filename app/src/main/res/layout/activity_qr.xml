@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GenerateQR">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables,UselessParent">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qrPageBalance"
+            android:text="Balance Loading"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_margin="2sp"
+            android:layout_gravity="center"
+            android:src="@drawable/stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo"
+            android:contentDescription="QR Code of user"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:text="Loading"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo21"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+</LinearLayout>

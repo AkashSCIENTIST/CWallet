@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Pay">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColorHint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.03"
+            android:text="Balance :"
+            android:textColor="#516b9e"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:textColorHint="@color/black"
+            android:id="@+id/balance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:text="Loading ..."
+            android:textColor="#516b9e"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:backgroundTint="#aaaaaa"
+            android:textColorHint="#aaaaaa"
+            android:textColor="@color/black"
+            android:id="@+id/receiver"
+            android:layout_margin="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="Receiver's ID"
+            android:hint="Receiver's ID"
+            android:inputType="text"
+            android:layout_weight="10"
+            tools:ignore="HardcodedText,LabelFor,RtlSymmetry,SmallSp" />
+        <ImageView
+            android:src="@drawable/scan"
+            android:onClick="scan"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:layout_weight="1"
+            android:contentDescription="Scan"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/amount"
+        android:backgroundTint="#aaaaaa"
+        android:textColorHint="#aaaa"
+        android:textColor="@color/black"
+        android:layout_margin="8sp"
+        android:layout_width="match_parent"
+        android:autofillHints="Amount"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        tools:ignore="HardcodedText,LabelFor,RtlSymmetry,SmallSp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAY"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:layout_marginTop="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo21"
+        android:layout_gravity="center"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
